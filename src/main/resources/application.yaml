@@ -2,9 +2,9 @@ spring:
   application:
     name: jjl-housekeeping
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/jjl_housekeeping
+    url: jdbc:postgresql://120.27.115.21:5432/jjl_housekeeping
     username: postgres
-    password: 123456
+    password: Gc.6835.
   servlet:
     multipart:
       max-request-size: 100MB #最大请求文件的大小
