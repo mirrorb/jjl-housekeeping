@@ -1,0 +1,1 @@
+java -agentlib:native-image-agent=config-output-dir=./native-image -jar %~dp0build\libs\jjl-housekeeping-0.0.1-SNAPSHOT.jar
