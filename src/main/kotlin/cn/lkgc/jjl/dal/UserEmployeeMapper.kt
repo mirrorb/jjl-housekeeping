@@ -21,8 +21,8 @@ interface UserEmployeeMapper : BaseMapper<UserEmployee> {
         CASE WHEN bs.type = '收藏' OR bs.type = '点赞收藏' THEN true ELSE false END AS star 
         FROM user_employee ue LEFT JOIN biz_store bs ON ue.username = bs.employee AND bs.customer = #{username} 
         <where>
-            <if test='reqVO.employee != null and reqVO.employee != "" '> 
-                AND ue.username LIKE '%' || #{reqVO.employee} || '%' 
+            <if test='reqVO.name != null and reqVO.name != "" '> 
+                AND ue.name LIKE '%' || #{reqVO.name} || '%' 
             </if> 
             <if test='reqVO.star != null and reqVO.star != "" '> 
                 AND (bs.type = '收藏' OR bs.type = '点赞收藏') </if> 
