@@ -6,8 +6,6 @@ import cn.lkgc.jjl.framework.anno.Permit
 import cn.lkgc.jjl.framework.pojo.CommonResult
 import cn.lkgc.jjl.framework.pojo.CommonResult.Companion.success
 import cn.lkgc.jjl.framework.pojo.PageResult
-import cn.lkgc.jjl.service.BizAreaService
-import cn.lkgc.jjl.service.BizTypeService
 import cn.lkgc.jjl.service.GlobalOptionsService
 import cn.lkgc.jjl.service.UserEmployeeService
 import org.springframework.web.bind.annotation.*
@@ -19,8 +17,6 @@ import org.springframework.web.bind.annotation.*
 @RestController
 class UserEmployeeController(
     private val userEmployeeService: UserEmployeeService,
-    private val bizAreaService: BizAreaService,
-    private val bizTypeService: BizTypeService,
     private val globalOptionsService: GlobalOptionsService
 ) {
 
