@@ -1,35 +1,5 @@
 spring:
   application:
     name: jjl-housekeeping
-  datasource:
-    url: jdbc:postgresql://120.27.115.21:5432/jjl_housekeeping
-    username: postgres
-    password: Gc.6835.
-  servlet:
-    multipart:
-      max-request-size: 100MB #最大请求文件的大小
-      max-file-size: 100MB #设置单个文件最大长度
-      file-size-threshold: 20MB #当文件达到多少时进行磁盘写入
-
-logging:
-  level:
-    cn.lkgc.jjl.dal.*: debug
-
-cors:
-  allow-origins:
-    - http://127.0.0.1
-
-server:
-  host: http://127.0.0.1
-  port: 8080
-
-resources:
-  avatarPath: /storage/upload/avatar
-  carouselPath: /storage/upload/carousel
-  picturePath: /storage/upload/picture
-  editorImagePath: /storage/upload/editor/image
-  editorVideoPath: /storage/upload/editor/video
-  path-patterns:
-    - /resources/**
-  locations:
-    - file:/storage/upload/
+  profiles:
+    active: dev
